@@ -51,13 +51,13 @@ Finally, toggle the visibility using the 'Visible' checkbox. If it is unchecked,
   #### Spree >= 3.1
 
   ```ruby
-  gem 'spree_static_content', github: 'spree-contrib/spree_static_content'
+  gem 'spree_static_content', github: 'TCnet/spree_static_content'
   ```
 
   #### Spree 3.0 and Spree 2.x
 
   ```ruby
-  gem 'spree_static_content', github: 'spree-contrib/spree_static_content', branch: 'X-X-stable'
+  gem 'spree_static_content', github: 'TCnet/spree_static_content', branch: 'X-X-stable'
   ```
 
   The `branch` option is important: it must match the version of Spree you're using.
