@@ -1,10 +1,10 @@
 <% if Spree::Page.by_store(current_store).visible.sidebar_links.any? %>
-  <nav id="pages" class="sidebar-item">
-    <h4 class="pages-root filter-title">
-      <%= plural_resource_name(Spree::Page) %>
-    </h4>
-    <ul class="pages-list list-group">
-      <%= render partial: 'spree/static_content/static_content_list', collection: Spree::Page.visible.sidebar_links, as: :page %>
+<div id="pages" data-hook arial-> 
+  <div class="widget widget-categories mb-4">
+    <h3 class="widgettitle"><%= plural_resource_name(Spree::Page) %></h3>
+    <ul class="list-categories">
+   <%= render partial: 'spree/static_content/static_content_list_side', collection: Spree::Page.visible.sidebar_links, as: :page %>
     </ul>
-  </nav>
+  </div>
+</div>
 <% end %>
